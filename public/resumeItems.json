@@ -1,0 +1,80 @@
+{   "featured": {
+    "skill": ["Having a ball", "Python", "Petting dogs"],
+    "project": ["operation-a"],
+    "education": ["some-school"],
+    "work": ["hanging-out"],
+    "training": ["a-course-or-something"]
+    },
+
+    "blurbs": {
+        "Having a ball": "I usually know how to have a good time, but let's keep it to the weekends, ok?"
+    },
+
+    "experiences": [
+        {
+            "id": "hanging-out",
+            "type": "work",
+            "employer": "Somewhere I worked",
+            "position": "Hang Out Guy",
+            "dates": "May 2112 - July 2115",
+            "sortDate": 211507,
+            "image": "placeholder.jpg",
+            "alt": "Alt Text.",
+            "location": "Someplace",
+            "skills": []
+        },
+        {
+            "id": "operation-a",
+            "type": "project",
+            "title": "Operation A",
+            "image": "placeholder.jpg",
+            "alt": "Alt Text.",
+            "description": "Saying something about this project, but it's optional.",
+            "skills": ["Having a ball", "Python", "Petting dogs"],
+            "gitLink": "#",
+            "projectLink": "#"
+        },
+        {
+            "id": "some-school",
+            "type": "education",
+            "name": "Some School",
+            "cardName": "Some School",
+            "degree": "Participation",
+            "subject": "OPTIONAL SUBJECT",
+            "dates": "August 1908 - August 2008",
+            "sortDate": 200808,
+            "image": "placeholder.jpg",
+            "alt": "Alt text",
+            "skills": ["Petting dogs"],
+            "description": "I have something to say about this educational experience.",
+            "details": [
+                "Here, I am saying more things.",
+
+                "And even more."
+            ],
+            "location": "Someplace"
+        },
+        {
+            "id": "a-course-or-something",
+            "type": "training",
+            "title": "The Course",
+            "issuer": "Trainers",
+            "image": "placeholder.jpeg",
+            "alt": "Alt text",
+            "link": "#",
+            "date": "June 9, 2021",
+            "sortDate": 20210609,
+            "skills": ["jQuery", "JavaScript", "HTML", "CSS", "Front-end Web Development", "Having a ball"],
+            "assignments": [
+                {
+                    "id": "an-assignment",
+                    "title": "The Assignment",
+                    "assignmentLink": "#",
+                    "gitLink": "#",
+                    "gitType": "This is optional. It will default to 'Github', but you can use it to say 'Glitch' or something else.",
+                    "skills": ["jQuery", "JavaScript", "HTML", "CSS", "Front-end Web Development"]
+                }
+            ]
+        },
+    ]
+}

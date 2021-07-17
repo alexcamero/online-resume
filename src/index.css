@@ -1,0 +1,701 @@
+/* GENERAL */
+
+body {
+  font-family: monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#content {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+button {
+  font-family: monospace;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+/* SECTIONS */
+
+.mainSection {
+  width: 100%;
+  min-height: 45vh;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mainSection h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.mainSection h3 {
+  margin-bottom: 20px;
+  font-size: 15px;
+  max-width: 97%;
+  text-align: center;
+}
+
+.moreButton {
+  background-color: white;
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+.moreButton:hover {
+  color: red;
+}
+
+/* Section Specifics */
+
+.project, .education, .training, .work {
+  margin-top: 40px;
+  width: 85%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  grid-gap: 30px;
+  justify-items: center;
+  align-items: center;
+}
+
+.skill {
+  margin-top: 5px;
+  width: 90%;
+}
+
+/* CONTACT FOOTER */
+
+#contactFooter {
+  min-height: 30vh;
+}
+
+#contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 40px;
+}
+
+#contact a {
+  display: block;
+  text-decoration: none;
+  background-color: black;
+  padding: 5px 8px;
+  color: white;
+  font-size: 20px;
+  border-radius: 8px;
+}
+
+#contact a:hover {
+  color: red;
+}
+
+/* TOP PART */
+
+#top {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#glamourshot {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+}
+
+#glamourShot img {
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+#title {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#title h1, h2 {
+  margin: 2px;
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CARDS */
+
+.cardTop {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  width: 300px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 10px 10px 0 0;
+}
+
+.cardBottom {
+  margin: 0 5px;
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  width: 300px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 0 0 10px 10px;
+  font-size: 14px;
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: black;
+  box-shadow: 0 2px 5px 5px rgba(0,0,0,0.5);
+}
+
+.card img {
+  object-fit: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.card h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.cardHover {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  opacity: 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cardHover p {
+  margin: 0 40px;
+}
+
+.card:hover .cardHover {
+  animation-name: highlight;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+.card:hover {
+  cursor: pointer;
+  animation-name: highlight2;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes highlight {
+  100% {
+    opacity: 1;
+    background-color: rgba(0,0,0,0.8);
+  }
+}
+
+@keyframes highlight2 {
+  100% {
+    box-shadow: 0 2px 5px 5px red;
+  }
+}
+
+
+
+
+
+
+
+/* SMALL CARDS */
+
+.smallCard {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  width: 300px;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 5px rgba(0,0,0,0.5);
+}
+
+.smallCard img {
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 5px 0 0 5px;
+}
+
+.smallCardText {
+  height: 100px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.smallCardText h3 {
+  font-size: 15px;
+}
+
+.smallCardText h4 {
+  font-size: 12px;
+}
+
+.smallCardText h3, h4 {
+  margin: 0 4px;
+  padding: 0; 
+}
+
+.smallCard:hover {
+  cursor: pointer;
+  animation-name: highlight2;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+
+
+
+
+/* SKILL BUTTONS */
+
+.skillButton {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px 10px 5px 5px;
+  border: none;
+}
+
+.skillButton:hover {
+  cursor: pointer;
+  animation-name: buttonHover;
+  animation-duration: 250ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes buttonHover {
+  100% {
+    color: red;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* NAV BAR */
+
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 100;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: red;
+}
+
+#leftNav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+}
+
+#resumeLinks {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-start;
+
+}
+
+#resumeLinks a {
+  font-size: 20px;
+  height: 20px;
+  width: 100%;
+  border-top: 1px solid white;
+  margin: 0;
+  padding: 10px;
+}
+
+#hamburger button {
+  background-color: black;
+  color: white;
+  border: none;
+  margin-right: 10px;
+  font-size: 30px;
+  border: 1px solid rgba(255,255,255,0.5);
+  padding: 1px 5px 1px 5px;
+  border-radius: 5px;
+}
+
+#hamburger button:hover {
+  color: red;
+}
+
+#contactLinks {
+  font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* POPUP */
+
+#popUp {
+  display: none;
+  position: fixed;
+  top: 100px;
+  left: 5%;
+  width: 90vw;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#theDivInsidePopUp {
+  border: 2px solid red;
+  background-color: #CCC;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#bar {
+  height: 30px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#bar button {
+  margin-right: 10px;
+  color: white;
+  font-size: 20px;
+  background-color: black;
+}
+
+#bar button:hover {
+  color: red;
+}
+
+#popUpMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  align-items: center;
+  height: 75vh;
+  overflow-y: auto;
+}
+
+#popUpImage {
+  margin-top: 20px;
+  width: 300px;
+  height: 300px;
+}
+
+#popUpImage img {
+  object-fit: cover;
+  width: 300px;
+  height: 300px;
+  border: 1px solid red;
+  border-radius: 10px;
+}
+
+#popUpContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#popUpContent h3 {
+  display: block;
+  font-size: 30px;
+  margin: 10px;
+  text-align: center;
+}
+
+#popUpContent h4 {
+  font-size: 20px;
+}
+
+#popUpContent h5 {
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+#popUpDetails {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: flex-start;
+}
+
+#popUpDetails p {
+  margin: 15px;
+  font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIUM SCREENS */
+
+@media screen and (min-width: 600px) {
+  #top {
+    flex-direction: row;
+  }
+
+  #title {
+    align-items: flex-start;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (min-width: 950px) {
+
+
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #leftNav {
+    width: auto;
+    justify-content: flex-start;
+  }
+
+  #hamburger {
+    display: none;
+  }
+
+  #resumeLinks {
+    display: flex !important;
+    flex-direction: row;
+    width: auto;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  #resumeLinks a {
+    height: auto;
+    width: auto;
+    border: none;
+    margin: 0 10px;
+    padding: 0;
+  }
+
+  #contact {
+    width: 50%;
+  }
+
+  #popUpMain {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  #popUpImage {
+    margin: 20px;
+  }
+
+  .skill {
+    width: 70%;
+  }
+
+  #popUp {
+    width: 70vw;
+    left: 15%;
+  }
+}
